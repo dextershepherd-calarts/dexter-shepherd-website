@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #5EB7B7; */
+    background: linear-gradient(#5EB7B7, #96d1c7);
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+.page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    margin: 64px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.hero-text h3 {
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+}
+
+.col {
+    width: 50%;
+}
+
+.project-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about {
+    position: sticky;
+    top: 64px;
+}
+
+.text-container {
+    border: 1px solid white;
+    margin: 32px;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.text-container h3 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.text-container ul {
+    padding-bottom: 16px;    
+}
+
+.project {
+    position: relative;
+    border: 1px solid white;
+    padding: 32px;
+    padding-left: 0;
+    margin: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    border-radius: 4px;
+}
+
+.project-text {
+    flex-grow: 1;
+}
+
+.project-text p {
+    font-size: 12px;
+}
+
+.project-text a {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 16px;
+}
+
+.project .image {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-left: -50px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+
+.feedback {
+    background-image: url('assets/feedback.jpg');
+}
+
+.insta {
+    background-image: url('assets/insta.png');
+}
+
+.paintbrush {
+    background-image: url('assets/paintbrush.jpg');
+}
+
+.shaderclub {
+    background-image: url('assets/shaderclub.jpg');
+}
+
