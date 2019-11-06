@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-
-
 body {
     margin: 0;
     padding: 0;
-    /* background-color: #5EB7B7; */
-    background: linear-gradient(#5EB7B7, #96d1c7);
-    font-family: 'IBM Plex Mono', monospace;
+    background-color: #5EB7B7;
+    font-family: sans-serif;
     color: white;
 }
 
@@ -114,64 +110,18 @@ a {
     border-radius: 2px;
 }
 
-.feedback {
-    background-image: url('assets/feedback.jpg');
+.project-1 {
+    background-image: url('assets/tmpimg.png');
 }
 
-.insta {
-    background-image: url('assets/insta.png');
+.project-2 {
+    background-image: url('assets/tmpimg.png');
 }
 
-.paintbrush {
-    background-image: url('assets/paintbrush.jpg');
+.project-3 {
+    background-image: url('assets/tmpimg.png');
 }
 
-.shaderclub {
-    background-image: url('assets/shaderclub.jpg');
-}
-
-
-
-.top-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 16px;
-}
-
-.project-detail {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 128px;
-    height: 50vh;
-}
-
-.project-detail-text {
-    text-align: center;
-    margin-bottom: 64px;
-}
-
-
-#feed img {
-    margin-bottom: 32px !important;
-    border-radius: 4px;
-}
-
-
-
-.embed-container { 
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
-.embed-container iframe, .embed-container object, .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 
-    100%; 
+.project-4 {
+    background-image: url('assets/tmpimg.png');
 }
