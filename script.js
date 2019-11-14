@@ -1,18 +1,42 @@
-$(document).click(crazy)
+$(document).ready(mainCode)
 
 
-setInterval(crazy, 300)
+function mainCode() {
 
-function crazy() {
-    $('.page-container *').css("font-size", Math.random() * 50 + "px")
-    $('.page-container *').css("padding-left", Math.random() * 100 + "px")
-    $('.page-container *').css("padding-top", Math.random() * 100 + "px")
-    $('.page-container *').css("border-radius", Math.random() * 100 + "px")
-    $('.page-container *').css("background-color", `rgba(
-        ${Math.random() * 255},
-        ${Math.random() * 255},
-        ${Math.random() * 255},
-        1.0
-        )`)
-    $('.page-container *').addClass('animated jackInTheBox')
+    $(document).on("mousemove", onMouseMove)
+    $(document).on("keypress", onKeyPress)
+
+
+    function onKeyPress(event) {
+        event.preventDefault()
+        if ( event.key == " " ) {
+            anime({
+                targets: "*",
+                translateX: 0,
+                translateY: 0,
+                rotate: 0,
+            })
+        }
+    }
+    function onMouseMove(event) {
+        var mouseTarget = event.target
+
+        var maxDistance = 100
+        if ( 
+            mouseTarget.tagName !== "HTML" &&
+            mouseTarget.tagName !== "BODY" &&
+            !mouseTarget.className.includes("page-container")
+            ) {
+            anime({
+                targets: mouseTarget,
+                translateY: "+=" + (Math.random() * 2 - 1) * maxDistance,
+                translateX: "+=" + (Math.random() * 2 - 1) * maxDistance,
+                // rotate: Math.random() * 360,
+                easing: "easeOutQuint",
+                duration: 5000
+            })
+        }
+
+    }
 }
+
